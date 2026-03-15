@@ -1,0 +1,28 @@
+{
+	"schemaVersion": 1,
+	"id": "loader",
+	"version": "${version}",
+	"name": "loader",
+	"description": "Loads a fabric mod remotely from an url at runtime.",
+	"authors": [
+		"Astera Development"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/loader/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"preLaunch": [
+			"dev.astera.loader.Loader"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
